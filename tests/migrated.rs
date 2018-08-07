@@ -243,7 +243,6 @@ fn test_parse_string() {
 }
 
 #[test]
-#[ignore] // FIXME
 fn test_parse_string_not_trim() {
     init_logger();
 
@@ -428,7 +427,6 @@ fn test_option() {
 }
 
 #[test]
-#[ignore] // FIXME
 fn test_option_not_trim() {
     init_logger();
     test_parse_ok(&[("<a> </a>", Some(" ".to_string()))]);

@@ -79,7 +79,7 @@ impl<'de, R: Read> Deserializer<R> {
 
     pub fn new_from_reader(reader: R) -> Self {
         let config = ParserConfig::new()
-            .trim_whitespace(true)
+            .trim_whitespace(false)
             .whitespace_to_characters(true)
             .cdata_to_characters(true)
             .ignore_comments(true)
